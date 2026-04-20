@@ -4,5 +4,6 @@
 
 <a href="upload.php">Upload Project</a><br>
 <a href="projects.php">View Projects</a><br>
+<a href="solution.php">Submit Solution</a><br>
 <a href="review.php">Review (Faculty)</a><br>
 <a href="logout.php">Logout</a>
