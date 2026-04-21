@@ -1,9 +1,40 @@
 <?php include 'includes/auth.php'; ?>
 
-<h3>Welcome <?php echo $_SESSION['user']['name']; ?></h3>
+<?php 
+include 'includes/header.php'; 
 
-<a href="upload.php">Upload Project</a><br>
-<a href="projects.php">View Projects</a><br>
-<a href="solution.php">Submit Solution</a><br>
-<a href="review.php">Review (Faculty)</a><br>
-<a href="logout.php">Logout</a>
+$username = $_SESSION['user']['name']; // Adjust based on your DB column name
+?>
+
+<div class="dashboard-container">
+    <div class="welcome-header">
+        <h1>Welcome, <?php echo htmlspecialchars($username); ?>!</h1>
+        <a href="logout.php" class="logout-btn">Logout</a>
+    </div>
+
+    <div class="action-grid">
+    <a href="upload.php" class="action-card">
+        <span>📤</span>
+        Upload Project
+    </a>
+    
+    <a href="projects.php" class="action-card">
+        <span>📂</span>
+        View Projects
+    </a>
+
+    <a href="solution.php" class="action-card">
+        <span>💡</span>
+        Submit Solution
+    </a>
+
+    <?php if(isset($_SESSION['user']['role']) && $_SESSION['user']['role'] == 'faculty'): ?>
+    <a href="review.php" class="action-card">
+        <span>⚖️</span>
+        Review Projects
+    </a>
+    <?php endif; ?>
+</div>
+</div>
+
+<?php // include 'includes/footer.php'; ?>
