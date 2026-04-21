@@ -1,1 +1,169 @@
+/* --- index.php specific styles --- */
 
+/* 1. Background and Layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    /* Using a soft blue gradient to fill the empty space */
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;      /* Vertically centers the card */
+    justify-content: center;   /* Horizontally centers the card */
+}
+
+.welcome-container {
+    background: #ffffff;
+    padding: 3.5rem 2.5rem;   /* Slightly more padding for a "premium" feel */
+    border-radius: 24px;      /* Smoother corners */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    max-width: 480px;
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+/* Make the internal title look like the main branding now */
+.welcome-container h3 {
+    font-size: 2.2rem;
+    color: #1a2a3a;
+    margin-bottom: 0.8rem;
+    letter-spacing: -0.5px;
+}
+
+.welcome-container p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+/* 4. Button Container */
+.btn-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* 5. Button Base Styles */
+.btn {
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    flex: 1;
+    display: inline-block;
+}
+
+/* Login Button (Solid Blue) */
+.btn-login {
+    background-color: #5c7cfa;
+    color: white;
+    box-shadow: 0 4px 12px rgba(92, 124, 250, 0.3);
+}
+
+.btn-login:hover {
+    background-color: #4263eb;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(92, 124, 250, 0.4);
+}
+
+/* Register Button (Outline Blue) */
+.btn-register {
+    background-color: transparent;
+    color: #5c7cfa;
+    border: 2px solid #5c7cfa;
+}
+
+.btn-register:hover {
+    background-color: #f0f3ff;
+    transform: translateY(-2px);
+}
+/* Styling the info block */
+.feature-info {
+    margin: 20px 0 30px 0;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.feature-info p {
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+.benefit-list {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.benefit-list li {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.benefit-list span {
+    font-size: 1.2rem;
+    background: #f0f4ff;
+    padding: 8px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Bold emphasizes the site's purpose */
+strong {
+    color: #5c7cfa;
+    font-weight: 700;
+}
+/* Container for the list to keep it centered */
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between emoji and text */
+    margin-bottom: 12px;
+}
+
+
+
+/* Button Container Fix */
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+/* Container for the list */
+.info-list {
+    display: inline-block;
+    text-align: left;
+    margin: 15px 0 25px 0; /* Reduced top/bottom margin for the whole block */
+}
+
+
+.info-item p {
+    margin: 0; /* Remove default paragraph margins */
+    font-size: 0.95rem;
+    color: #4a5568;
+    line-height: 1.2; /* Tighter line spacing */
+}
+
+
+/* Intro text margin reduction */
+.intro-text {
+    max-width: 400px;
+    margin: 0 auto 10px auto; /* Reduced bottom margin */
+    color: #718096;
+    line-height: 1.4;
+}

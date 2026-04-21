@@ -1,0 +1,275 @@
+/* --- projects.php specific styles --- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    color: #2c3e50;
+}
+
+.projects-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.projects-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1a2a3a;
+}
+
+/* The Feed Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Individual Project Card */
+.project-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid #edf2f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.project-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 15px 0;
+    flex-grow: 1; /* Pushes the download button to the bottom */
+}
+
+/* Styling the Download Link as a Button */
+.download-btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #5c7cfa;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #4263eb;
+}
+
+.back-nav {
+    margin-bottom: 20px;
+}
+
+.back-nav a {
+    color: #5c7cfa;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* Solutions styling inside the card */
+.solutions-section {
+    margin-top: 15px;
+    background: #f8fafc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.solutions-section h4 {
+    font-size: 0.9rem;
+    color: #475569;
+    margin-bottom: 5px;
+}
+
+.solution-text {
+    font-size: 0.85rem !important;
+    background: white;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 5px !important;
+}
+
+.project-info {
+    margin-bottom: 15px;
+}
+/* Header and Navigation */
+.section-title {
+    text-align: left !important;
+    font-size: 1.6rem !important;
+    margin: 40px 0 20px 0;
+    color: #1e293b;
+    border-left: 5px solid #5c7cfa;
+    padding-left: 15px;
+}
+
+.section-divider {
+    margin: 60px 0;
+    border: 0;
+    border-top: 2px dashed #cbd5e1;
+    display: block !important;
+}
+
+/* Uploader info styling */
+.uploader-info {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 10px;
+    background: #f1f5f9;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.uploader-info b {
+    color: #334155;
+}
+
+/* Pending Card Variations */
+.pending-card {
+    border-top: 4px solid #f1c40f;
+    background: #fffdf5; /* Very subtle yellow tint */
+}
+
+.status-badge {
+    background: #fef9c3;
+    color: #854d0e;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 800;
+    float: right;
+}
+
+.download-btn.secondary {
+    background-color: #94a3b8;
+}
+/* Section Titles */
+.section-title {
+    margin: 40px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.status-approved { color: #10b981; border-color: #10b981; }
+.status-pending  { color: #f59e0b; border-color: #f59e0b; }
+.status-rejected { color: #ef4444; border-color: #ef4444; }
+
+/* Card Variations */
+.card-pending { border-top: 5px solid #f59e0b; }
+.card-rejected { 
+    border-top: 5px solid #ef4444; 
+    opacity: 0.8; 
+    filter: grayscale(0.2);
+}
+
+/* Button Variations */
+.btn-approved { background-color: #5c7cfa; }
+.btn-pending  { background-color: #f59e0b; }
+.btn-rejected { background-color: #94a3b8; }
+
+.btn-pending:hover { background-color: #d97706; }
+.btn-rejected:hover { background-color: #64748b; }
+
+.empty-msg {
+    color: #94a3b8;
+    font-style: italic;
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 20px;
+}
+
+.status-section {
+    margin-bottom: 60px;
+}
+/* Solutions area within the project card */
+.solutions-area {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.solutions-area h4 {
+    font-size: 0.85rem;
+    color: #64748b;
+    text-transform: uppercase;
+    margin: 15px 0 10px 0;
+    letter-spacing: 0.5px;
+}
+
+.solution-item {
+    background: #f1f5f9;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.solution-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.solution-meta strong {
+    color: #1e293b;
+}
+
+.solution-meta span {
+    color: #94a3b8;
+}
+
+.solution-item p {
+    font-size: 0.85rem !important;
+    margin: 5px 0 !important;
+    color: #334155;
+    line-height: 1.4;
+}
+
+.sol-download {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 0.75rem;
+    color: #5c7cfa;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.sol-download:hover {
+    text-decoration: underline;
+}
+
+.no-data {
+    font-size: 0.8rem;
+    color: #cbd5e1;
+    font-style: italic;
+}
+
+.uploader-tag {
+    font-size: 0.7rem;
+    color: #5c7cfa;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+}

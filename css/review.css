@@ -1,0 +1,181 @@
+/* --- review.php Dashboard Styles --- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8fafc; /* Very light cool gray */
+    color: #334155;
+}
+
+.review-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+.review-container h2 {
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.review-container p {
+    color: #64748b;
+    margin-bottom: 2.5rem;
+}
+
+/* Individual Project Card */
+.review-item {
+    background: #ffffff;
+    padding: 1.5rem 2rem;
+    border-radius: 16px;
+    margin-bottom: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #eef2f6;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+}
+
+/* Left Side: Project Info */
+.project-details h3 {
+    margin: 0;
+    color: #1e293b;
+    font-size: 1.25rem;
+}
+
+.project-details p {
+    margin: 6px 0 12px 0;
+    font-size: 0.95rem;
+    color: #64748b;
+}
+
+.file-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: #5c7cfa;
+    text-decoration: none;
+    font-weight: 600;
+    background: #f0f4ff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.file-link:hover {
+    background: #e0e7ff;
+}
+
+/* Right Side: Action Form/Buttons */
+.review-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-approve, .btn-reject {
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+/* Approve Button (Green) */
+.btn-approve {
+    background-color: #10b981;
+    color: white;
+}
+
+.btn-approve:hover {
+    background-color: #059669;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+    transform: translateY(-1px);
+}
+
+/* Reject Button (Red Subtle) */
+.btn-reject {
+    background-color: #fee2e2;
+    color: #ef4444;
+}
+
+.btn-reject:hover {
+    background-color: #fecaca;
+    color: #dc2626;
+    transform: translateY(-1px);
+}
+
+/* Empty State Styling */
+.empty-state {
+    text-align: center;
+    padding: 80px 40px;
+    background: white;
+    border-radius: 20px;
+    border: 2px dashed #cbd5e1;
+    color: #94a3b8;
+}
+
+.empty-state p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    display: inline-block;
+    color: #5c7cfa;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 650px) {
+    .review-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .review-actions {
+        width: 100%;
+    }
+    
+    .btn-approve, .btn-reject {
+        flex: 1;
+        text-align: center;
+    }
+}
+.back-nav {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.back-nav a {
+    text-decoration: none;
+    color: #64748b;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.back-nav a:hover {
+    color: #5c7cfa; 
+}

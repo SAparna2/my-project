@@ -1,0 +1,150 @@
+/* --- register.php specific styles --- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-container {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.register-container h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Inputs and Select box styling */
+input, select {
+    width: 100%;
+    padding: 14px;
+    border: 1.5px solid #e1e8ef;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+    background-color: #fff;
+}
+
+/* Specific Select adjustments */
+select {
+    cursor: pointer;
+    color: #666;
+    /* Custom arrow for modern look */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232c3e50' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    appearance: none;
+}
+
+input:focus, select:focus {
+    border-color: #5c7cfa;
+    box-shadow: 0 0 0 4px rgba(92, 124, 250, 0.1);
+}
+
+button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #27ae60;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+}
+
+.form-footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.form-footer a {
+    color: #5c7cfa;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* Success and Error Alerts */
+.alert {
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    animation: slideIn 0.3s ease-out;
+}
+
+.alert.success {
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.alert.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Navigation at the top of the card/page */
+.top-nav {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.home-link {
+    text-decoration: none;
+    color: #64748b; /* Subtle slate gray */
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.home-link .arrow {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.home-link:hover {
+    color: #5c7cfa; /* Highlight to your theme blue */
+}
+
+.home-link:hover .arrow {
+    transform: translateX(-5px); /* Animation moving the arrow left */
+}

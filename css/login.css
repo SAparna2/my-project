@@ -1,0 +1,118 @@
+/* --- login.php specific styles --- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* The Login Card */
+.login-container {
+    background: #ffffff;
+    padding: 3rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column; /* Stacks email, password, and button vertically */
+    gap: 15px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1.5px solid #e1e8ef;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+input:focus {
+    border-color: #5c7cfa;
+    box-shadow: 0 0 0 4px rgba(92, 124, 250, 0.1);
+}
+
+/* Login Button */
+button, 
+input[type="submit"] {
+    background-color: #5c7cfa;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #4263eb;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(92, 124, 250, 0.3);
+}
+
+/* Link back to register or home */
+.form-footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.form-footer a {
+    color: #5c7cfa;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* Navigation at the top of the card/page */
+.top-nav {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.home-link {
+    text-decoration: none;
+    color: #64748b; /* Subtle slate gray */
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.home-link .arrow {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.home-link:hover {
+    color: #5c7cfa; /* Highlight to your theme blue */
+}
+
+.home-link:hover .arrow {
+    transform: translateX(-5px); /* Animation moving the arrow left */
+}
